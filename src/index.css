@@ -1,0 +1,1663 @@
+/* =========================================
+   INNOVEXA SPORTSYNC 2.0
+   GLOBAL STYLES
+========================================= */
+body {
+  background: red !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #111827;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* =========================================
+   COMMON
+========================================= */
+
+.page-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #2563eb;
+}
+
+
+/* =========================================
+   FIND GAME
+========================================= */
+
+.find-game-page {
+  min-height: 100vh;
+  padding: 60px 7% 90px;
+  background: #f8fafc;
+}
+
+.find-game-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.find-game-header {
+  margin-bottom: 35px;
+}
+
+.find-game-header h1 {
+  margin-top: 10px;
+  font-size: 42px;
+  letter-spacing: -1.5px;
+  color: #111827;
+}
+
+.find-game-header p {
+  margin-top: 10px;
+  max-width: 600px;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.find-game-card {
+  max-width: 750px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.find-game-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.find-game-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.find-game-field label {
+  font-size: 9px;
+  font-weight: 700;
+  color: #6b7280;
+  letter-spacing: 0.8px;
+}
+
+.find-game-field input,
+.find-game-field select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+  background: white;
+  color: #374151;
+  outline: none;
+}
+
+.find-game-field input:focus,
+.find-game-field select:focus {
+  border-color: #93c5fd;
+}
+
+.find-game-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+.find-game-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   FACILITIES
+========================================= */
+
+.facilities-page {
+  min-height: 100vh;
+  padding: 55px 7% 90px;
+  background: #f8fafc;
+}
+
+.facilities-header {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.facilities-header h1 {
+  margin-top: 8px;
+  font-size: 36px;
+  color: #111827;
+}
+
+.facilities-header p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.facility-list {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.facility-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+  transition: 0.2s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-3px);
+  border-color: #bfdbfe;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+}
+
+.facility-card h2 {
+  font-size: 17px;
+  color: #111827;
+}
+
+.facility-card p {
+  margin-top: 7px;
+  color: #6b7280;
+  font-size: 11px;
+}
+
+.facility-details {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  color: #6b7280;
+  font-size: 10px;
+}
+
+.select-facility-button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.select-facility-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   PLAYERS
+========================================= */
+
+.players-page {
+  min-height: 100vh;
+  padding: 55px 7% 90px;
+  background: #f8fafc;
+}
+
+.players-header {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.players-header h1 {
+  margin-top: 8px;
+  font-size: 36px;
+  color: #111827;
+}
+
+.players-header p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.ai-match-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 9px 13px;
+  border-radius: 20px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.match-summary {
+  max-width: 1100px;
+  margin: 0 auto 25px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.match-summary > div {
+  padding: 17px 20px;
+  border-right: 1px solid #e5e7eb;
+}
+
+.match-summary > div:last-child {
+  border-right: none;
+}
+
+.match-summary span {
+  display: block;
+  font-size: 9px;
+  color: #9ca3af;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.match-summary strong {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #374151;
+  font-size: 12px;
+}
+
+.ai-match-message {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 18px;
+
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  background: #f8fbff;
+}
+
+.ai-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+}
+
+.ai-match-message strong {
+  display: block;
+  font-size: 13px;
+  color: #1e3a8a;
+  margin-bottom: 4px;
+}
+
+.ai-match-message p {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.players-list {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.players-list-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.players-list-heading strong {
+  color: #374151;
+}
+
+.players-list-heading span {
+  color: #9ca3af;
+}
+
+.player-card {
+  display: grid;
+  grid-template-columns: 50px 1fr 70px 100px auto;
+
+  gap: 18px;
+  align-items: center;
+
+  padding: 17px;
+  margin-bottom: 12px;
+
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  transition: 0.2s ease;
+}
+
+.player-card:hover {
+  border-color: #bfdbfe;
+  transform: translateY(-2px);
+}
+
+.player-avatar {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.player-info h2 {
+  font-size: 14px;
+  color: #111827;
+  margin-bottom: 7px;
+}
+
+.player-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.player-details span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #6b7280;
+  font-size: 10px;
+}
+
+.player-match {
+  text-align: center;
+}
+
+.player-match strong {
+  display: block;
+  color: #2563eb;
+  font-size: 17px;
+}
+
+.player-match span {
+  font-size: 9px;
+  color: #9ca3af;
+}
+
+.player-status {
+  color: #16a34a;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.invite-player {
+  padding: 9px 15px;
+  border: 1px solid #bfdbfe;
+  border-radius: 7px;
+  background: white;
+  color: #2563eb;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.invite-player:hover {
+  background: #eff6ff;
+}
+
+.players-action {
+  max-width: 1100px;
+  margin: 30px auto 0;
+
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: white;
+}
+
+.players-action div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.players-action strong {
+  font-size: 13px;
+  color: #111827;
+}
+
+.players-action span {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.build-team-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 17px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.build-team-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   TEAMS
+========================================= */
+
+.teams-page {
+  min-height: 100vh;
+  padding: 55px 7% 90px;
+  background: #f8fafc;
+}
+
+.teams-header {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.teams-header h1 {
+  margin-top: 8px;
+  font-size: 36px;
+  color: #111827;
+}
+
+.teams-header p {
+  margin-top: 8px;
+  max-width: 600px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.ai-team-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 9px 13px;
+  border-radius: 20px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.team-ai-summary {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 18px;
+
+  background: #f8fbff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+}
+
+.team-ai-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #2563eb;
+  color: white;
+
+  border-radius: 10px;
+}
+
+.team-ai-summary strong {
+  display: block;
+  color: #1e3a8a;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.team-ai-summary p {
+  color: #6b7280;
+  font-size: 11px;
+}
+
+.teams-container {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+
+  align-items: center;
+  gap: 20px;
+}
+
+.team-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.03);
+}
+
+.team-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.team-card-header span {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #9ca3af;
+}
+
+.team-card-header h2 {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.team-score {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.team-score small {
+  font-size: 8px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.team-members {
+  padding: 16px 0;
+}
+
+.team-player {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+
+  gap: 12px;
+  align-items: center;
+
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.team-player:hover {
+  background: #f8fafc;
+}
+
+.team-player-avatar {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #475569;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.team-player strong {
+  display: block;
+  font-size: 12px;
+  color: #374151;
+}
+
+.team-player span {
+  display: block;
+  margin-top: 3px;
+  font-size: 9px;
+  color: #9ca3af;
+}
+
+.team-player b {
+  font-size: 13px;
+  color: #2563eb;
+}
+
+.team-stat {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+
+  color: #6b7280;
+  font-size: 10px;
+}
+
+.team-stat span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.team-vs {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+
+  border-radius: 50%;
+  background: #111827;
+  color: white;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.balance-card {
+  max-width: 1100px;
+  margin: 25px auto 0;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 16px 20px;
+
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.balance-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+  background: #f1f5f9;
+  color: #2563eb;
+}
+
+.balance-info {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.balance-info strong {
+  font-size: 12px;
+  color: #374151;
+}
+
+.balance-info span {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+.balance-score {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.teams-action {
+  max-width: 1100px;
+  margin: 25px auto 0;
+
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.teams-action div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.teams-action strong {
+  font-size: 13px;
+  color: #111827;
+}
+
+.teams-action span {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.continue-booking {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 17px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.continue-booking:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   BOOKING
+========================================= */
+
+.booking-page {
+  min-height: 100vh;
+  padding: 55px 7% 90px;
+  background: #f8fafc;
+}
+
+.booking-header {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.booking-header h1 {
+  margin-top: 8px;
+  font-size: 36px;
+  color: #111827;
+  letter-spacing: -1px;
+}
+
+.booking-header p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.booking-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 9px 13px;
+
+  border-radius: 20px;
+
+  background: #ecfdf5;
+  color: #16a34a;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.booking-layout {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 330px;
+
+  gap: 22px;
+
+  align-items: start;
+}
+
+.booking-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.booking-card {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  padding: 20px;
+}
+
+.booking-card-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #2563eb;
+}
+
+.booking-card-title span {
+  display: block;
+
+  font-size: 9px;
+  color: #9ca3af;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.booking-card-title h2 {
+  font-size: 17px;
+  color: #111827;
+}
+
+.facility-booking-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  margin-top: 22px;
+  padding-top: 17px;
+
+  border-top: 1px solid #f1f5f9;
+}
+
+.facility-booking-info span {
+  display: block;
+
+  font-size: 8px;
+  color: #9ca3af;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.facility-booking-info strong {
+  font-size: 11px;
+  color: #374151;
+}
+
+.card-heading {
+  font-size: 14px;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.schedule-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  color: #2563eb;
+}
+
+.schedule-option.selected {
+  background: #f8fbff;
+  border-color: #bfdbfe;
+}
+
+.schedule-option span {
+  display: block;
+
+  font-size: 8px;
+  color: #9ca3af;
+  font-weight: 700;
+
+  margin-bottom: 5px;
+}
+
+.schedule-option strong {
+  font-size: 11px;
+  color: #374151;
+}
+
+.booking-teams-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.booking-teams-heading .card-heading {
+  margin-bottom: 0;
+}
+
+.booking-teams-heading > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  color: #6b7280;
+  font-size: 10px;
+}
+
+.mini-teams {
+  display: grid;
+  grid-template-columns: 1fr 45px 1fr;
+
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 18px;
+}
+
+.mini-teams > div {
+  padding: 13px;
+  border-radius: 9px;
+  background: #f8fafc;
+}
+
+.mini-teams strong {
+  display: block;
+
+  color: #374151;
+  font-size: 11px;
+
+  margin-bottom: 4px;
+}
+
+.mini-teams span {
+  color: #9ca3af;
+  font-size: 9px;
+}
+
+.mini-teams b {
+  text-align: center;
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+.booking-summary {
+  position: sticky;
+  top: 25px;
+
+  padding: 22px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.03);
+}
+
+.booking-summary h2 {
+  font-size: 16px;
+  color: #111827;
+  margin-bottom: 22px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.summary-row span {
+  color: #6b7280;
+  font-size: 11px;
+}
+
+.summary-row strong {
+  color: #374151;
+  font-size: 11px;
+}
+
+.summary-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 18px 0;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.total-row span {
+  color: #374151;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.total-row strong {
+  color: #111827;
+  font-size: 22px;
+}
+
+.confirm-booking {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 13px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.confirm-booking:hover {
+  background: #1d4ed8;
+}
+
+.secure-note {
+  margin-top: 13px;
+
+  text-align: center;
+
+  color: #9ca3af;
+  font-size: 9px;
+}
+
+
+/* =========================================
+   GAME READY
+========================================= */
+
+.game-ready-page {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  background: #f8fafc;
+
+  text-align: center;
+}
+
+.success-icon {
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 50%;
+
+  background: #ecfdf5;
+  color: #16a34a;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.game-ready-page h1 {
+  margin-top: 10px;
+
+  font-size: 42px;
+
+  color: #111827;
+
+  letter-spacing: -1.5px;
+}
+
+.game-ready-page > p {
+  max-width: 500px;
+
+  margin-top: 10px;
+
+  color: #6b7280;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+.ready-card {
+  width: 100%;
+  max-width: 650px;
+
+  margin-top: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  text-align: left;
+}
+
+.ready-card > div {
+  padding: 20px;
+
+  border-right: 1px solid #e5e7eb;
+}
+
+.ready-card > div:last-child {
+  border-right: none;
+}
+
+.ready-card span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9ca3af;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.ready-card strong {
+  color: #374151;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+.back-home-button {
+  margin-top: 22px;
+
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.back-home-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .players-page,
+  .teams-page,
+  .booking-page,
+  .facilities-page {
+    padding: 40px 20px 70px;
+  }
+
+  .players-header,
+  .teams-header,
+  .booking-header,
+  .facilities-header {
+    align-items: flex-start;
+  }
+
+  .match-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .match-summary > div:nth-child(2) {
+    border-right: none;
+  }
+
+  .player-card {
+    grid-template-columns: 50px 1fr 70px;
+  }
+
+  .player-status,
+  .invite-player {
+    grid-column: 2 / -1;
+  }
+
+  .teams-container {
+    grid-template-columns: 1fr;
+  }
+
+  .team-vs {
+    margin: 0 auto;
+  }
+
+  .booking-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-summary {
+    position: static;
+  }
+
+  .teams-action,
+  .players-action {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .continue-booking,
+  .build-team-button {
+    justify-content: center;
+  }
+
+  .facility-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 550px) {
+
+  .players-header,
+  .teams-header,
+  .booking-header,
+  .facilities-header {
+    flex-direction: column;
+  }
+
+  .players-header h1,
+  .teams-header h1,
+  .booking-header h1 {
+    font-size: 30px;
+  }
+
+  .match-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .match-summary > div {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .player-card {
+    grid-template-columns: 45px 1fr;
+  }
+
+  .player-match,
+  .player-status,
+  .invite-player {
+    grid-column: 2;
+  }
+
+  .facility-booking-info {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-teams {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-teams b {
+    display: none;
+  }
+
+  .ready-card {
+    grid-template-columns: 1fr;
+  }
+
+  .ready-card > div {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .ready-card > div:last-child {
+    border-bottom: none;
+  }
+
+  .game-ready-page h1 {
+    font-size: 34px;
+  }
+}
+.find-game-features {
+  max-width: 750px;
+  margin-top: 22px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.find-game-features > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 14px;
+
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  color: #6b7280;
+
+  font-size: 10px;
+}
+
+.find-game-features svg {
+  color: #2563eb;
+}
+
+@media (max-width: 600px) {
+  .find-game-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .find-game-features {
+    grid-template-columns: 1fr;
+  }
+}
+.facility-result-count {
+  padding: 9px 13px;
+
+  border-radius: 20px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.facility-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+}
+
+.facility-sport {
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #2563eb;
+}
+
+.facility-rating {
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  padding: 6px 8px;
+
+  background: #fffbeb;
+
+  color: #b45309;
+
+  border-radius: 7px;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.facility-details {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 12px;
+
+  color: #6b7280;
+
+  font-size: 10px;
+}
+
+.facility-details span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+}
+
+.facility-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 18px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #f1f5f9;
+}
+
+.facility-bottom > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.facility-time {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  color: #6b7280;
+
+  font-size: 9px;
+}
+
+.facility-bottom strong {
+  color: #111827;
+
+  font-size: 13px;
+}
+
+.facility-check {
+  color: #16a34a;
+}
+
+.select-facility-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  width: 100%;
+
+  margin-top: 17px;
+
+  padding: 11px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.select-facility-button:hover {
+  background: #1d4ed8;
+}
